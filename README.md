@@ -20,14 +20,27 @@
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
+- Name of feature: Lab 06 Locations
+  - Estimate of time needed to complete: 60 minutes
+  - Start time: 2:15pm
+  - Finish time: 3:16pm
+  - Actual time needed to complete: 61 minutes
+
+- Name of feature: Lab 06 Map
+  - Estimate of time needed to complete: 30 minutes
+  - Start time: 3:18pm
+  - Finish time: 3:26pm
+  - Actual time needed to complete: 8 minutes
+
+- Name of feature: Lab 06 Errors
+  - Estimate of time needed to complete: 
+  - Start time: 
+  - Finish time: 
+  - Actual time needed to complete: 
+
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
-- Name of feature: ________________________________
-  - Estimate of time needed to complete: _____
-  - Start time: _____
-  - Finish time: _____
-  - Actual time needed to complete: _____
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
