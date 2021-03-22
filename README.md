@@ -20,14 +20,21 @@
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 
+- Name of feature: Labo 06 Locations
+  - Estimate of time needed to complete: 60 minutes
+  - Start time: 2:15pm
+  - Finish time: _____
+  - Actual time needed to complete: _____
+
+- Name of feature: Labo 06 Map
+  - Estimate of time needed to complete:
+  - Start time:
+  - Finish time: _____
+  - Actual time needed to complete: _____
+
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
-- Name of feature: ________________________________
-  - Estimate of time needed to complete: _____
-  - Start time: _____
-  - Finish time: _____
-  - Actual time needed to complete: _____
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
