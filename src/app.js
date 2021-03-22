@@ -1,4 +1,6 @@
 import React from 'react';
+import Header from './header';
+import Footer from './footer';
 import './app.css';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,6 +28,7 @@ class App extends React.Component {
   render() {
     return (
       <>
+        <Header />
         <h1>City Explorer</h1>
         <Form>
           <Form.Group>
@@ -37,6 +40,8 @@ class App extends React.Component {
             Explore!
           </Button>
         </Form>
+
+        <Footer />
 
       </>
     );
