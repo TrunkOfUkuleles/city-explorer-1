@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './header';
 import Footer from './footer';
 import City from './city';
+import Error from './error';
 import './app.css';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,7 +18,8 @@ class App extends React.Component {
       location: {},
       locationSearch: '',
       displayResults: false,
-      mapSrc: ''
+      mapSrc: '',
+      displayError: ''
     }
   }
 
@@ -29,7 +31,7 @@ class App extends React.Component {
     this.setState({
       location: locationArray[0],
       displayResults: true,
-      mapSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=15`
+      mapSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=15&markers=icon:small-red-cutout|${locationArray[0].lat},${locationArray[0].lon}`
     })
   }
 
@@ -64,6 +66,10 @@ class App extends React.Component {
           longitude={this.state.location.lon}
           displayResults={this.state.displayResults}
           mapSrc={this.state.mapSrc}
+        />
+
+        <Error 
+          displayResults={this.state.displayError}       
         />
 
         <Footer />
