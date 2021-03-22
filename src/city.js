@@ -10,12 +10,13 @@ class City extends React.Component {
         {this.props.displayResults &&
           <>
             <Card style={{ width: '18rem' }}>
-              <Card.Header>{this.props.city}</Card.Header>
+              <Card.Header as="h4">{this.props.city}</Card.Header>
               <ListGroup variant="flush">
                <ListGroup.Item>{this.props.latitude}</ListGroup.Item>
                <ListGroup.Item>{this.props.longitude}</ListGroup.Item>
               </ListGroup>
               <Card.Body>
+                <Card.Img src={this.props.mapSrc} />
               </Card.Body>
             </Card>
           </>

@@ -15,8 +15,8 @@ class App extends React.Component {
     this.state = {
       location: {},
       locationSearch: '',
-      displayResults: false
-
+      displayResults: false,
+      mapSrc: ''
     }
   }
 
@@ -27,7 +27,8 @@ class App extends React.Component {
     const locationArray = location.data;
     this.setState({
       location: locationArray[0],
-      displayResults: true
+      displayResults: true,
+      mapSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=15`
     })
   }
 
@@ -52,6 +53,7 @@ class App extends React.Component {
           latitude={this.state.location.lat}
           longitude={this.state.location.lon}
           displayResults={this.state.displayResults}
+          mapSrc={this.state.mapSrc}
         />
 
         <Footer />
