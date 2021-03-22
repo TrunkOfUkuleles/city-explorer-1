@@ -27,8 +27,8 @@
   - Actual time needed to complete: 61 minutes
 
 - Name of feature: Labo 06 Map
-  - Estimate of time needed to complete:
-  - Start time:
+  - Estimate of time needed to complete: 30 minutes
+  - Start time: 3:18pm
   - Finish time: _____
   - Actual time needed to complete: _____
 
