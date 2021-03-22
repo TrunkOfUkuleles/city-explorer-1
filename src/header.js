@@ -1,12 +1,15 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbar from 'react-bootstrap/Navbar';
 
 
 class Header extends React.Component {
   render() {
     return (
       <>
-        <h1>City Explorer</h1>
+       <Navbar bg="dark" variant="dark">
+          <Navbar.Brand ><h1>🏙️ City Explorer 🏙️</h1></Navbar.Brand>
+       </Navbar>
 
       </>
     );

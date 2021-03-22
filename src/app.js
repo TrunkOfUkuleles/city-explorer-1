@@ -6,6 +6,7 @@ import './app.css';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
+import Col from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button';
 
 
@@ -37,15 +38,24 @@ class App extends React.Component {
       <>
         <Header />
         
-        <Form onSubmit={this.getLocationData}>
-          <Form.Group>
-            <Form.Label>City Explorer</Form.Label>
-            <Form.Control onChange={(e) => this.setState({ locationSearch: e.target.value })} type="text" placeholder="Enter city" />
-          </Form.Group>
-
-          <Button variant="primary" type="submit">
-            Explore!
-          </Button>
+        <Form inline onSubmit={this.getLocationData}>
+          {/* <Form.Row>
+            <Col>
+             <Form.Label>City Explorer</Form.Label>
+            </Col>
+          </Form.Row> */}
+          <Form.Row>
+            <Col>
+             <Form.Group>
+              <Form.Control onChange={(e) => this.setState({ locationSearch: e.target.value })} type="text" placeholder="Enter city" />
+            </Form.Group>
+            </Col>
+            <Col>
+              <Button variant="primary" type="submit">
+                Explore!
+              </Button>
+            </Col>
+          </Form.Row>
         </Form>
 
         <City 
