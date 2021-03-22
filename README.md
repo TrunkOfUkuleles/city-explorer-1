@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+![Lab 06 drawing done with Pair Programming Partner - Julien](https://drive.google.com/file/d/1COp-o_QtFy1UwTtn-KXYUZTggBChJH3O/view?usp=sharing)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
