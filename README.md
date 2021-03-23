@@ -1,8 +1,8 @@
 # City Explorer
 
-**Author**: Audrey Patterson
-**Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
-[**Deployed Site**](https://epic-hodgkin-57acb3.netlify.app)
+- **Author**: Audrey Patterson
+- **Version**: 1.0.0 (increment the patch/fix version number if you make more commits past your first submission)
+- [**Deployed Site**](https://epic-hodgkin-57acb3.netlify.app)
 
 ## Overview
 
@@ -34,13 +34,14 @@ App allows visitors to search for a city which will run through a 3rd party API 
   - Actual time needed to complete: 8 minutes
 
 - Name of feature: Lab 06 Errors
-  - Estimate of time needed to complete: 
-  - Start time: 
-  - Finish time: 
-  - Actual time needed to complete: 
+  - Estimate of time needed to complete: 60 minutes
+  - Start time: 3:55pm
+  - Finish time: 9:37pm
+  - Actual time needed to complete: 2 hours - split between a few start and stop times
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
+[Stack Overflow string for catching errors](https://stackoverflow.com/questions/49967779/axios-handling-errors)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

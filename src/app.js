@@ -19,20 +19,30 @@ class App extends React.Component {
       locationSearch: '',
       displayResults: false,
       mapSrc: '',
-      displayError: ''
+      displayError: '',
+      returnsError: false
     }
   }
 
   getLocationData = async (e) => {
     e.preventDefault();
-    const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.locationSearch}&format=json`;
-    const location = await axios.get(url);
-    const locationArray = location.data;
-    this.setState({
-      location: locationArray[0],
-      displayResults: true,
-      mapSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=15&markers=icon:small-red-cutout|${locationArray[0].lat},${locationArray[0].lon}`
-    })
+    try {
+      const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.locationSearch}&format=json`;
+      const location = await axios.get(url)
+      const locationArray = location.data;
+      this.setState({
+          location: locationArray[0],
+          displayResults: true,
+          mapSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=15&markers=icon:small-red-cutout|${locationArray[0].lat},${locationArray[0].lon}`
+        })
+    }catch(err) {
+      console.log(err.message);
+      this.setState({
+        returnsError: true,
+        displayError: err.message,
+        displayResults: true,
+      });
+    }
   }
 
   render() {
@@ -69,7 +79,8 @@ class App extends React.Component {
         />
 
         <Error 
-          displayResults={this.state.displayError}       
+          returnsError={this.state.returnsError}
+          displayError={this.state.displayError}
         />
 
         <Footer />
