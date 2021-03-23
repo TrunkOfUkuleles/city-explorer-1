@@ -1,8 +1,9 @@
 # City Explorer
 
 - **Author**: Audrey Patterson
-- **Version**: 1.0.1 (increment the patch/fix version number if you make more commits past your first submission)
+- **Version**: 1.0.2 (increment the patch/fix version number if you make more commits past your first submission)
 - [**Deployed Site**](https://epic-hodgkin-57acb3.netlify.app)
+- [Trello](https://trello.com/b/VjvSUsLI/city-explorer)
 
 ## Overview
 
