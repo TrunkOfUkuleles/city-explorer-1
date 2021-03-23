@@ -41,7 +41,10 @@ App allows visitors to search for a city which will run through a 3rd party API 
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
-[Stack Overflow string for catching errors](https://stackoverflow.com/questions/49967779/axios-handling-errors)
+- [Stack Overflow string for catching errors](https://stackoverflow.com/questions/49967779/axios-handling-errors)
+- [MDB Text for bootstrap](https://mdbootstrap.com/docs/react/utilities/text/)
+- [MDB Sizing for bootstrap](https://mdbootstrap.com/docs/react/utilities/sizing/)
+- [MDB Display for bootstrap](https://mdbootstrap.com/docs/react/utilities/display/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

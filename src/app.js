@@ -49,16 +49,11 @@ class App extends React.Component {
       <>
         <Header />
         
-        <Form inline onSubmit={this.getLocationData}>
-          {/* <Form.Row>
+        <Form inline className="w-responsive text-center mx-auto p-3 mt-2" onSubmit={this.getLocationData}>
+          <Form.Row >
             <Col>
-             <Form.Label>City Explorer</Form.Label>
-            </Col>
-          </Form.Row> */}
-          <Form.Row>
-            <Col>
-             <Form.Group>
-              <Form.Control onChange={(e) => this.setState({ locationSearch: e.target.value })} type="text" placeholder="Enter city" />
+             <Form.Group >
+              <Form.Control onChange={(e) => this.setState({ locationSearch: e.target.value })} type="text" placeholder="Enter a city" />
             </Form.Group>
             </Col>
             <Col>
