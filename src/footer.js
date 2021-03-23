@@ -7,7 +7,7 @@ class Footer extends React.Component {
     return (
       <>
         <Card bg='dark' text='info'>
-          <Card.Body>
+          <Card.Body className="text-right">
             <p>&copy; 2021 Audrey Patterson - Code Fellows 301</p>
           </Card.Body>
         </Card>

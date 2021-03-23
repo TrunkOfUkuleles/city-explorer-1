@@ -9,7 +9,7 @@ class City extends React.Component {
       <>
         {this.props.displayResults &&
           <>
-            <Card style={{ width: '33rem' }}>
+            <Card className="w-responsive text-center mx-auto p-3 mt-2" >
               <Card.Header as="h4">{this.props.city}</Card.Header>
               <ListGroup variant="flush">
                <ListGroup.Item>{this.props.latitude}</ListGroup.Item>
