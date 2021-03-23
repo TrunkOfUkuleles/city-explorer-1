@@ -40,7 +40,6 @@ class App extends React.Component {
       this.setState({
         returnsError: true,
         displayError: err.message,
-        displayResults: true,
       });
     }
   }

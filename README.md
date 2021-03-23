@@ -36,7 +36,7 @@ App allows visitors to search for a city which will run through a 3rd party API 
 - Name of feature: Lab 06 Errors
   - Estimate of time needed to complete: 60 minutes
   - Start time: 3:55pm
-  - Finish time: 9:37pm
+  - Finish time: 9:37pm - not fully completed. can't get error message to show
   - Actual time needed to complete: 2 hours - split between a few start and stop times
 
 ## Credit and Collaborations
