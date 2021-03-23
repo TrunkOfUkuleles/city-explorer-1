@@ -7,12 +7,7 @@ class Error extends React.Component {
   render() {
     return (
       <>
-       {this.props.returnsError &&
-          <>
-          <h3>{this.props.err}</h3>
-
-          </>
-        }
+        <h3>{this.props.displayError}</h3>
       </>
     );
   }

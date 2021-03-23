@@ -7,7 +7,7 @@ import './app.css';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col'
+import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 
@@ -19,7 +19,7 @@ class App extends React.Component {
       locationSearch: '',
       displayResults: false,
       mapSrc: '',
-      displayError: '',
+      errMsg: {},
       returnsError: false
     }
   }
@@ -35,11 +35,11 @@ class App extends React.Component {
           displayResults: true,
           mapSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=15&markers=icon:small-red-cutout|${locationArray[0].lat},${locationArray[0].lon}`
         })
-    }catch(err) {
-      console.log(err.message);
+    }catch(error) {
+      console.log(error.message);
       this.setState({
         returnsError: true,
-        displayError: err.message,
+        errMsg: error.message,
       });
     }
   }
@@ -63,7 +63,13 @@ class App extends React.Component {
             </Col>
           </Form.Row>
         </Form>
-
+        {this.state.returnsError &&
+          <>
+          <Error 
+            displayError={this.state.errMsg}
+          />
+          </>
+        }
         <City 
           city={this.state.location.display_name}
           latitude={this.state.location.lat}
@@ -72,10 +78,6 @@ class App extends React.Component {
           mapSrc={this.state.mapSrc}
         />
 
-        <Error 
-          returnsError={this.state.returnsError}
-          displayError={this.state.displayError}
-        />
 
         <Footer />
 
