@@ -27,13 +27,13 @@ class App extends React.Component {
   getLocationData = async (e) => {
     e.preventDefault();
     try {
-      const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_KEY}&q=${this.state.locationSearch}&format=json`;
+      const url = `https://us1.locationiq.com/v1/search.php?key=${process.env.REACT_APP_LOCATION_THEKEY}&q=${this.state.locationSearch}&format=json`;
       const location = await axios.get(url)
       const locationArray = location.data;
       this.setState({
           location: locationArray[0],
           displayResults: true,
-          mapSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_KEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=15&markers=icon:small-red-cutout|${locationArray[0].lat},${locationArray[0].lon}`
+          mapSrc: `https://maps.locationiq.com/v3/staticmap?key=${process.env.REACT_APP_LOCATION_THEKEY}&center=${locationArray[0].lat},${locationArray[0].lon}&zoom=15&markers=icon:small-red-cutout|${locationArray[0].lat},${locationArray[0].lon}`
         })
     }catch(err) {
       console.log(err.message);
